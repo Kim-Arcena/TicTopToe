@@ -55,10 +55,11 @@ public class MainActivity extends AppCompatActivity {
         combinationList.add(new int[]{0, 4, 8});
 
         final String getPlayerOneName = getIntent().getStringExtra("playerOne");
-        final String getPlayerTwoName = getIntent().getStringExtra("PlayerTwo");
+        final String getPlayerTwoName = getIntent().getStringExtra("playerTwo");
 
         playerOneName.setText(getPlayerOneName);
         playerTwoName.setText(getPlayerTwoName);
+
 
         image1.setOnClickListener(new View.OnClickListener() {
             @Override
