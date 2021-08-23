@@ -227,17 +227,14 @@ public class MainActivity extends AppCompatActivity {
 
         totalSelectedBoxes = 1;
 
-        image1.setImageResource(R.drawable.transparent_back);
-        image2.setImageResource(R.drawable.transparent_back);
-        image3.setImageResource(R.drawable.transparent_back);
-        image4.setImageResource(R.drawable.transparent_back);
-        image5.setImageResource(R.drawable.transparent_back);
-        image6.setImageResource(R.drawable.transparent_back);
-        image7.setImageResource(R.drawable.transparent_back);
-        image8.setImageResource(R.drawable.transparent_back);
-        image9.setImageResource(R.drawable.transparent_back);
 
+         ImageView[] images = new ImageView[]{image1,image2,image3, image4, image5,image6, image7, image8, image9};
+         int[] res = new int[]{R.id.image1,R.id.image2,R.id.image3,R.id.image4,R.id.image5,R.id.image6,R.id.image7,R.id.image8,R.id.image9};
 
+         for(int i = 0; i <images.length; i++){
+             images[i] = (ImageView)findViewById(res[i]);
+             images[i].setImageResource(R.drawable.transparent_back);
+         }
 
     }
 }
