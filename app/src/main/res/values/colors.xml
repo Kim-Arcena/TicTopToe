@@ -7,7 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    <color name="transparent">#00000000</color>
     <color name="dark_teal">#76AAAC</color>
     <color name="darker_teal">#377D81</color>
     <color name="darkest_teal">#1C4345</color>
@@ -20,6 +20,9 @@
     <color name="dark_gray">#343742</color>
     <color name="orig_pink">#ac555d</color>
 
+    <color name="teal_light">#5FA2A6</color>
+    <color name="teal_dark">#3C797C</color>
+    <color name="teal_bg">#599194</color>
     <color name="text_color">#000000</color>
     <color name="background_color">#000000</color>
     <color name="highlight">#000000</color>
