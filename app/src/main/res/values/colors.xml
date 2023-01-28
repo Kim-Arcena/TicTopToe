@@ -20,6 +20,10 @@
     <color name="dark_gray">#343742</color>
     <color name="orig_pink">#ac555d</color>
 
+    <color name="light_gray">#3C3A3A</color>
+    <color name="light">#EDE8E1</color>
+    <color name="brown_shadow">#BBB5AC</color>
+    <color name="main_brown">#E9DFD3</color>
     <color name="teal_light">#5D9B9E</color>
     <color name="teal_dark">#3C797C</color>
     <color name="teal_bg">#599194</color>
