@@ -20,12 +20,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:src="@drawable/dragon"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true">
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/dragon">
 
         </ImageView>
 
@@ -43,7 +44,7 @@
                 android:text="Enter Player Names"
                 android:textColor="@color/light_gray"
                 android:textSize="28dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="340dp"
@@ -121,10 +122,10 @@
                     app:neumorph_insetTop="5dp"
                     app:neumorph_shadowColorDark="@color/teal_dark"
                     app:neumorph_shadowColorLight="@color/teal_light"
-                    app:neumorph_strokeColor="@color/dark_teal"
                     app:neumorph_shadowElevation="8dp"
                     app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                     app:neumorph_shapeType="pressed"
+                    app:neumorph_strokeColor="@color/dark_teal"
                     app:neumorph_strokeWidth="1dp">
 
                     <ImageView
@@ -162,7 +163,7 @@
                 android:elevation="6dp"
                 android:stateListAnimator="@null"
                 android:text="Start Game"
-                android:textColor="@color/white" />
+                android:textColor="@color/main_brown" />
 
         </LinearLayout>
     </RelativeLayout>

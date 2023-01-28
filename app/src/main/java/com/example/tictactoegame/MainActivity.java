@@ -1,6 +1,9 @@
 package com.example.tictactoegame;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +12,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import soup.neumorphism.NeumorphCardView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int totalSelectedBoxes = 1;
 
-    private LinearLayout playerOneLayout, playerTwoLayout;
+    private NeumorphCardView playerOneLayout, playerTwoLayout;
     private TextView playerOneName, playerTwoName;
     private ImageView image1, image2, image3, image4, image5, image6, image7, image8, image9;
 
@@ -137,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (isBoxSelectable(8)) {
-                    performAction((ImageView)v, 0);
+                    performAction((ImageView)v, 8);
                 }
             }
         });
@@ -149,13 +154,15 @@ public class MainActivity extends AppCompatActivity {
         if (playerTurn == 1) {
             imageView.setImageResource(R.drawable.tylerrr);
             if (checkPlayerWin()) {
-                WinDialog winDialog = new WinDialog(MainActivity.this, playerOneName.getText().toString() + " has won the match", MainActivity.this);
+                WinDialog winDialog = new WinDialog(MainActivity.this, "~No Chances~\n" + playerOneName.getText().toString() + " has won the match", MainActivity.this);
                 winDialog.setCancelable(false);
+                winDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 winDialog.show();
             }
             else if (totalSelectedBoxes == 9){
-                WinDialog winDialog = new WinDialog(MainActivity.this,  "It's a tie! Suckuzz", MainActivity.this);
+                WinDialog winDialog = new WinDialog(MainActivity.this,  "It's a tie! It's a good day", MainActivity.this);
                 winDialog.setCancelable(false);
+                winDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 winDialog.show();
             }
             else{
@@ -168,13 +175,15 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(R.drawable.josh);
 
             if(checkPlayerWin()){
-                WinDialog winDialog = new WinDialog(MainActivity.this, playerTwoName.getText().toString() + " has won the match", MainActivity.this);
+                WinDialog winDialog = new WinDialog(MainActivity.this, "~No Chances~\n" +playerTwoName.getText().toString() + " has won the match", MainActivity.this);
                 winDialog.setCancelable(false);
+                winDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 winDialog.show();
             }
             else if(selectedBoxPosition == 9){
-                WinDialog winDialog = new WinDialog(MainActivity.this,  "It's a tie! Suckuzz", MainActivity.this);
+                WinDialog winDialog = new WinDialog(MainActivity.this,  "It's a tie! It's a good day", MainActivity.this);
                 winDialog.setCancelable(false);
+                winDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 winDialog.show();
             }
             else{
@@ -187,16 +196,18 @@ public class MainActivity extends AppCompatActivity {
 
     private void changePlayerTurn(int currentPlayerTurn){
         playerTurn = currentPlayerTurn;
-
-        if(playerTurn == 1){
-            playerOneLayout.setBackgroundResource(R.drawable.round_back_white_border);
-            playerTwoLayout.setBackgroundResource(R.drawable.round_back_white);
+        if (playerTurn == 1){
+            playerOneLayout.setShadowColorLight(getResources().getColor(R.color.light_pink));
+            playerOneLayout.setShadowColorDark(getResources().getColor(R.color.light_pink));
+            playerTwoLayout.setShadowColorLight(getResources().getColor(R.color.light_brown));
+            playerTwoLayout.setShadowColorDark(getResources().getColor(R.color.brown_shadow));
         }
         else {
-            playerOneLayout.setBackgroundResource(R.drawable.round_back_white);
-            playerTwoLayout.setBackgroundResource(R.drawable.round_back_white_border);
+            playerTwoLayout.setShadowColorLight(getResources().getColor(R.color.light_pink));
+            playerTwoLayout.setShadowColorDark(getResources().getColor(R.color.light_pink));
+            playerOneLayout.setShadowColorLight(getResources().getColor(R.color.light_brown));
+            playerOneLayout.setShadowColorDark(getResources().getColor(R.color.brown_shadow));
         }
-
     }
 
     private boolean checkPlayerWin() {

@@ -18,16 +18,16 @@
         android:orientation="horizontal">
 
         <soup.neumorphism.NeumorphCardView
+            android:id="@+id/playerOneLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:neumorph_backgroundColor="@color/main_brown"
             app:neumorph_shapeType="flat"
             app:neumorph_shadowElevation="4dp"
-            app:neumorph_shadowColorLight="@color/light"
+            app:neumorph_shadowColorLight="@color/light_brown"
             app:neumorph_shadowColorDark="@color/brown_shadow">
 
             <LinearLayout
-                android:id="@+id/playerOneLayout"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:gravity="center"
@@ -55,16 +55,16 @@
         </soup.neumorphism.NeumorphCardView>
 
         <soup.neumorphism.NeumorphCardView
+            android:id="@+id/playerTwoLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:neumorph_backgroundColor="@color/main_brown"
             app:neumorph_shapeType="flat"
             app:neumorph_shadowElevation="4dp"
-            app:neumorph_shadowColorLight="@color/light"
+            app:neumorph_shadowColorLight="@color/light_brown"
             app:neumorph_shadowColorDark="@color/brown_shadow">
 
             <LinearLayout
-                android:id="@+id/playerTwoLayout"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:gravity="center"
