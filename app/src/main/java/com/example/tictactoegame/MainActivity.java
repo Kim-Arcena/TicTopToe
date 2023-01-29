@@ -164,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
                 winDialog.setCancelable(false);
                 winDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 winDialog.show();
+                playerTurn = 2;
             }
             else{
                 changePlayerTurn(2);
@@ -234,8 +235,6 @@ public class MainActivity extends AppCompatActivity {
     public void restartMatch(){
         boxPositions = new int[]{0,0,0,0,0,0,0,0,0};
 
-        playerTurn = 1;
-
         totalSelectedBoxes = 1;
 
 
@@ -246,6 +245,6 @@ public class MainActivity extends AppCompatActivity {
              images[i] = (ImageView)findViewById(res[i]);
              images[i].setImageResource(R.drawable.transparent_back);
          }
-        changePlayerTurn(1);
+        changePlayerTurn(playerTurn);
     }
 }
