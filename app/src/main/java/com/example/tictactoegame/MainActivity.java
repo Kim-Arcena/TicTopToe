@@ -247,6 +247,5 @@ public class MainActivity extends AppCompatActivity {
              images[i].setImageResource(R.drawable.transparent_back);
          }
         changePlayerTurn(1);
-
     }
 }
