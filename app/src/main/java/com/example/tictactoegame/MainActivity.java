@@ -246,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
              images[i] = (ImageView)findViewById(res[i]);
              images[i].setImageResource(R.drawable.transparent_back);
          }
+        changePlayerTurn(1);
 
     }
 }
