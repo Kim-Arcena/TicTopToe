@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/Kim-Arcena/TicTopToe">
     <img src="https://user-images.githubusercontent.com/70198061/215286936-a79c0e47-80d2-424b-be71-e9f796ea512d.png" alt="Logo" width="120" height="120">
   </a>
 
@@ -26,9 +26,10 @@
   <h2>About the Project</h2>
 
   <p align="center">
-    <img src="https://user-images.githubusercontent.com/70198061/215287087-ea553693-4853-477f-a405-a98675da2df6.png" alt="banner" width="100%" />
+    <img src="https://user-images.githubusercontent.com/70198061/216769184-8664a9d2-7791-4c95-85f3-36845d673b42.png" alt="banner" width="100%" />
     <p>Developed this app three months after Twenty One Pilots (my favorite band) released their album "Scaled and Icy. I forgot why I developed this impulsively but the initial design is trashy and I this too. At least it's a little bit better tho. Redesigned this one after at least a year since I also need to append this project to my portfolio. Anyway, I hope you like it! AND STREAMMMM https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ</p>
 <div> 
+
   <!-- FEATURES -->
   <h2>Features</h2>
     <ol>
@@ -72,8 +73,8 @@
   <h3>App Screenshots</h3>
 
   <img src="https://user-images.githubusercontent.com/70198061/215287623-31add652-9cde-41dd-b69d-4a89782df8bb.png" alt="Add Player" width="32%">
-  <img src="https://user-images.githubusercontent.com/70198061/215287390-f80e17b5-a4a7-4a24-a607-394f8abc76ae.png" alt="Main Screen" width="32%">
-  <img src="https://user-images.githubusercontent.com/70198061/215287383-a4d4b622-2b4b-4873-8e80-b72b886b5de2.png" alt="Result Dialog" width="32%">
+  <img src="https://user-images.githubusercontent.com/70198061/216769291-49567481-5110-4def-ac48-533d0e8891d9.png" alt="Main Screen" width="32%">
+  <img src="https://user-images.githubusercontent.com/70198061/216769486-74f93ff2-8175-4c89-a122-309ea5d84428.png" alt="Result Dialog" width="32%">
   
   
 </div>
